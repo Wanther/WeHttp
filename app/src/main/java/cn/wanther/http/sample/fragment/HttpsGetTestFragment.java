@@ -37,7 +37,7 @@ public class HttpsGetTestFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        new HttpsGetStringTask().execute("https://www.uda100.com");
+        new HttpsGetStringTask().execute("http://ufound.cn");
     }
 
     private class HttpsGetStringTask extends AsyncTask<String, Void, String>{
