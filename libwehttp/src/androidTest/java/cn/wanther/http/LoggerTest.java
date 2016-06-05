@@ -3,7 +3,7 @@ package cn.wanther.http;
 import android.test.InstrumentationTestCase;
 import android.util.Log;
 
-import com.welearn.http.Logger;
+import cn.wanther.http.Logger;
 
 public class LoggerTest extends InstrumentationTestCase {
 

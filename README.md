@@ -26,7 +26,7 @@
 - 简单的get
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   Parser<String> parser = new StringParser();
   String result = executor.execute(request, parser);
   ```
@@ -34,7 +34,7 @@
 - 自定义Header的get请求
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   request.setHeader("Authorization", "Bearer a4e3b1dc2146a0225c476a3edd3044f3e2f65949");
   request.setHeader("Accept", "application/json; version=1");
   Parser<String> parser = new StringParser();
@@ -47,7 +47,7 @@
   Map<String, String> params = new HashMap<String, String>();
   params.put("name", "wanghe");
   params.put("pwd", "123456");
-  Request request = new SimplePostRequest("http://uda100.com", params);
+  Request request = new SimplePostRequest("http://ufound.cn", params);
   Parser<String> parser = new StringParser();
   String result = executor.execute(request, parser);
   ```
@@ -66,14 +66,14 @@
 - json的post请求
 
   ```java
-  Request request = new JSONPostRequest("http://uda100.com");
+  Request request = new JSONPostRequest("http://ufound.cn");
   Parser<String> parser = new StringParser();
   String result = executor.execute(request, parser);
   ```
 - JSON的返回
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   Parser<JSONObject> parser = new JSONParser();
   JSONObject result = executor.execute(request, parser);
   ```
@@ -81,7 +81,7 @@
 - JSONArray的返回
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   Parser<JSONArray> parser = new JSONArrayParser();
   JSONArray result = executor.execute(request, parser);
   ```
@@ -90,7 +90,7 @@
   ```java
   File destinationFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS, "DownloadTest.mp4"));
 
-  DownloadObject downloadObject = new DownloadObject("http://uda100.com/download", destinationFile, false);
+  DownloadObject downloadObject = new DownloadObject("http://ufound.cn/download", destinationFile, false);
 
   Request req = new DownloadRequest(downloadObject);
 
@@ -147,7 +147,7 @@
 原则上，自定义的Request和Parser按照上述结构和HTTP状态码抛出响应的异常，然后在调用的时候酌情选择处理
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   Parser<String> parser = new StringParser();
   try{
       String result = executor.execute(request, parser);
@@ -183,7 +183,7 @@
   在调用的时候
 
   ```java
-  Request request = new GetRequest("http://uda100.com");
+  Request request = new GetRequest("http://ufound.cn");
   Parser<String> parser = new StringParser();
   try{
       String result = executor.execute(request, parser);

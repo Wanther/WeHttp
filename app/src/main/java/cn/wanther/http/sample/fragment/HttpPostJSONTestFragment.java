@@ -46,7 +46,7 @@ public class HttpPostJSONTestFragment extends Fragment {
             e.printStackTrace();
         }
 
-        new HttpPostJSONTask().execute("http://www.baidu.com", json);
+        new HttpPostJSONTask().execute("http://ufound.cn", json);
     }
 
     private class HttpPostJSONTask extends AsyncTask<Object, Void, String>{

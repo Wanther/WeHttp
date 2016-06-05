@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import cn.wanther.http.HttpExecutor;
-import cn.wanther.http.sample.TestItemActivity;
 
 import java.util.ArrayList;
 import java.util.List;
